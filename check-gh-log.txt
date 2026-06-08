@@ -1,0 +1,5 @@
+
+=== Check gh status ===
+6/8/2026 7:10:11 AM
+Killing winget
+gh NOT found anywhere
