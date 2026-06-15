@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd ../.. && yarn workspace web build",
+  "outputDirectory": ".next",
+  "installCommand": "cd ../.. && corepack enable && yarn install",
+  "framework": "nextjs"
+}
