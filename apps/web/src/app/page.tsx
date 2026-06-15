@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import {
   Sparkles,
   Plane,
@@ -38,7 +38,7 @@ const trustMarkers = [
 
 export default function HomePage() {
   return (
-    <main className="bg-[#FAF7F1] text-[#1F2A24]">
+    <main className="bg-[#E8F4FF] text-[#1F2A24]">
       <Header overlay />
 
       {/* ============ HERO ============ */}
@@ -54,16 +54,15 @@ export default function HomePage() {
           poster={images.hero}
           className="absolute inset-0 h-full w-full object-cover opacity-60 motion-reduce:hidden"
         >
-          <source src="/videos/hero1.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/52152/52152-720.mp4" type="video/mp4" />
         </video>
-        {/* Heavy dark scrim so text pops cleanly */}
+        {/* Dark scrim — no colour tint */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
         {/* ── Main content ── */}
         <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-5 text-center sm:px-8">
           {/* Pill badge */}
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B89968]" />
             <span className="text-xs font-medium tracking-[0.18em] text-white/80 uppercase">
               Premium Medical &amp; Aesthetic Care
             </span>
@@ -98,18 +97,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* ── Scroll indicator ── */}
-        <div className="absolute bottom-10 left-0 right-0 z-10 flex items-center justify-between px-8 sm:px-14">
-          <span className="text-xs tracking-[0.2em] uppercase text-white/40">Scroll down</span>
-          <div className="flex h-8 w-5 items-start justify-center rounded-full border border-white/30 p-1">
-            <div className="h-1.5 w-0.5 animate-bounce rounded-full bg-white/60" />
-          </div>
-          <span className="text-xs tracking-[0.2em] uppercase text-white/40">to see more</span>
-        </div>
       </section>
 
       {/* ============ TRUST MARQUEE ============ */}
-      <section className="border-b border-[#E8E2D6] bg-[#1F2A24] py-2 overflow-hidden">
+      <section className="border-b border-[#B0CFEE] bg-[#0A1929] py-2 overflow-hidden">
         <div className="flex w-max vito-marquee">
           {[0, 1].map((dup) => (
             <div key={dup} className="flex items-center" aria-hidden={dup === 1}>
@@ -118,7 +109,7 @@ export default function HomePage() {
                   key={dup + marker}
                   className="flex items-center whitespace-nowrap px-5 text-[10px] font-medium uppercase tracking-[0.2em] text-white/60"
                 >
-                  <span className="mr-5 h-[3px] w-[3px] rounded-full bg-[#B89968]" />
+                  <span className="mr-5 h-[3px] w-[3px] rounded-full bg-[#1A7FD4]" />
                   {marker}
                 </span>
               ))}
@@ -128,7 +119,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ INTRO ============ */}
-      <section className="mx-auto max-w-7xl px-5 sm:px-8 py-24 md:py-28">
+      <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-12 pb-24 md:pt-14 md:pb-28">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
           <ScrollReveal>
             <Eyebrow>Welcome to VITO</Eyebrow>
@@ -164,7 +155,7 @@ export default function HomePage() {
 
           <ScrollReveal delay={120}>
             <div className="relative">
-              <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#E8E2D6] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#B0CFEE] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
                 {images.reception ? (
                   <img
                     src={images.reception}
@@ -187,7 +178,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ PILLARS ============ */}
-      <section className="bg-[#1F2A24] py-24 md:py-28">
+      <section className="bg-[#0A1929] py-24 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -206,7 +197,7 @@ export default function HomePage() {
                 <ScrollReveal key={pillar.id} delay={i * 100}>
                   <Link
                     href={`/services#${pillar.id}`}
-                    className="vito-lift group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 hover:border-[#B89968]/50 hover:bg-white/10"
+                    className="vito-lift group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 hover:border-[#1A7FD4]/50 hover:bg-white/10"
                   >
                     {/* faded + blurred background image */}
                     {pillarBackgrounds[pillar.id] ? (
@@ -216,20 +207,20 @@ export default function HomePage() {
                         className="pointer-events-none absolute inset-0 h-full w-full scale-110 object-cover opacity-[0.08] blur-[2px] transition-all duration-700 group-hover:opacity-[0.15] group-hover:scale-105"
                       />
                     ) : null}
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1F2A24]/90 via-[#1F2A24]/40 to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0A1929]/90 via-[#0A1929]/40 to-transparent" />
 
                     <div className="relative">
-                      <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#B89968]/15 text-[#B89968] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#B89968]/25">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1A7FD4]/15 text-[#1A7FD4] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#1A7FD4]/25">
                         <Icon className="h-5 w-5" />
                       </span>
-                      <span className="mt-6 block text-[11px] font-medium uppercase tracking-[0.2em] text-[#B89968]">
+                      <span className="mt-6 block text-[11px] font-medium uppercase tracking-[0.2em] text-[#1A7FD4]">
                         {pillar.eyebrow}
                       </span>
                       <h3 className="mt-2 font-cormorant-garamond text-2xl font-semibold text-white">
                         {pillar.title}
                       </h3>
                       <p className="mt-3 text-sm leading-relaxed text-white/65">{pillar.blurb}</p>
-                      <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-[#B89968]">
+                      <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-[#1A7FD4]">
                         Explore treatments
                         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </span>
@@ -249,7 +240,7 @@ export default function HomePage() {
             <SectionHeading eyebrow="Signature Treatments" title="Most-loved at VITO" />
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 self-start rounded-full border border-[#E8E2D6] px-5 py-2.5 text-sm font-medium text-[#1F2A24] transition-colors hover:border-[#6E7F63] sm:self-auto"
+              className="inline-flex items-center gap-2 self-start rounded-full border border-[#B0CFEE] px-5 py-2.5 text-sm font-medium text-[#1F2A24] transition-colors hover:border-[#6E7F63] sm:self-auto"
             >
               View all services
               <ArrowRight className="h-4 w-4" />
@@ -261,7 +252,7 @@ export default function HomePage() {
           {signatureTreatments.map((t, i) => (
             <ScrollReveal key={t.title} delay={i * 80}>
               <Link href={t.href} className="group block">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-[#E8E2D6] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-[#B0CFEE] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
                   {images[t.imageKey] ? (
                     <img
                       src={images[t.imageKey]}
@@ -269,7 +260,7 @@ export default function HomePage() {
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : null}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1F2A24]/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1929]/80 via-transparent to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-5">
                     <h3 className="font-cormorant-garamond text-xl font-semibold text-white">
                       {t.title}
@@ -284,7 +275,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ WHY VITO ============ */}
-      <section className="bg-[#1F2A24] py-24 md:py-28">
+      <section className="bg-[#0A1929] py-24 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -298,8 +289,8 @@ export default function HomePage() {
           <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
             {whyVito.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 90} className="h-full">
-                <div className="flex h-full flex-col bg-[#1F2A24] p-8">
-                  <span className="font-cormorant-garamond text-3xl font-semibold text-[#B89968]">
+                <div className="flex h-full flex-col bg-[#0A1929] p-8">
+                  <span className="font-cormorant-garamond text-3xl font-semibold text-[#1A7FD4]">
                     0{i + 1}
                   </span>
                   <h3 className="mt-4 text-lg font-medium text-white">{item.title}</h3>
@@ -317,8 +308,8 @@ export default function HomePage() {
           <ScrollReveal className="lg:col-span-5">
             <div className="relative">
               {/* glowing aura behind photo */}
-              <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-[#B89968]/30 to-[#6E7F63]/20 blur-2xl vito-float-slow" />
-              <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#E8E2D6] bg-gradient-to-br from-[#3A4A3C] to-[#1F2A24]">
+              <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-[#1A7FD4]/30 to-[#6E7F63]/20 blur-2xl vito-float-slow" />
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#B0CFEE] bg-gradient-to-br from-[#3A4A3C] to-[#0A1929]">
                 <SmartImage
                   src={founderImage}
                   fallbackSrc={images.medical}
@@ -358,7 +349,7 @@ export default function HomePage() {
                 '10+ years clinical experience',
               ].map((q) => (
                 <div key={q} className="flex items-start gap-2.5 text-sm text-[#5B6157]">
-                  <span className="text-[#B89968]">—</span>
+                  <span className="text-[#1A7FD4]">—</span>
                   {q}
                 </div>
               ))}
@@ -378,14 +369,14 @@ export default function HomePage() {
       <Achievements />
 
       {/* ============ TESTIMONIALS ============ */}
-      <section className="bg-[#2A3B30] py-24 md:py-28">
+      <section className="bg-[#0D2040] py-24 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <ScrollReveal>
             <div className="mb-14 text-center">
-              <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.24em] text-[#B89968]">
-                <span className="h-px w-6 bg-[#B89968]" />
+              <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.24em] text-[#1A7FD4]">
+                <span className="h-px w-6 bg-[#1A7FD4]" />
                 Kind Words
-                <span className="h-px w-6 bg-[#B89968]" />
+                <span className="h-px w-6 bg-[#1A7FD4]" />
               </span>
               <p className="mt-3 font-cormorant-garamond text-3xl font-semibold text-white sm:text-4xl">
                 What our patients say
@@ -397,9 +388,9 @@ export default function HomePage() {
       </section>
 
       {/* ============ STATS BAND ============ */}
-      <section className="bg-[#FAF7F1] py-20">
+      <section className="bg-[#E8F4FF] py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#E8E2D6] bg-[#E8E2D6] sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#B0CFEE] bg-[#B0CFEE] sm:grid-cols-4">
             {[
               { value: '6', label: 'Days open a week' },
               { value: '3', label: 'Pillars of care' },
@@ -407,7 +398,7 @@ export default function HomePage() {
               { value: '10+', label: 'Years experience' },
             ].map((stat) => (
               <div key={stat.label} className="bg-white py-12 text-center">
-                <p className="font-cormorant-garamond text-5xl font-semibold text-[#1F2A24] sm:text-6xl">
+                <p className="font-cormorant-garamond text-5xl font-semibold text-[#1A7FD4] sm:text-6xl">
                   {stat.value}
                 </p>
                 <p className="mt-2 text-xs uppercase tracking-[0.2em] text-[#6E7F63]">
@@ -419,11 +410,122 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ============ OUR BRANCHES ============ */}
+      <section className="bg-[#0A1929] py-24">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <ScrollReveal>
+            <SectionHeading light eyebrow="Two Locations" title="Visit Us in Cape Town" />
+          </ScrollReveal>
+          <div className="mt-14 grid gap-8 md:grid-cols-2">
+            {/* Table View branch */}
+            <ScrollReveal>
+              <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-500 hover:border-[#1A7FD4]/40 hover:bg-white/8">
+                {/* Branch image */}
+                <div className="relative h-64 overflow-hidden bg-[#162019]">
+                  <img
+                    src={images.branchTableView}
+                    alt="VITO Med & Aesthetics – Table View branch"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1929] via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-5">
+                    <span className="rounded-full bg-[#1A7FD4] px-3 py-1 text-xs font-semibold uppercase tracking-widest text-white">
+                      Table View
+                    </span>
+                  </div>
+                </div>
+                {/* Branch info */}
+                <div className="px-7 py-7">
+                  <h3 className="font-cormorant-garamond text-2xl font-semibold text-white">
+                    VITO Med &amp; Aesthetics — Table View
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/60">
+                    Block B207, Sandown Square<br />
+                    Passerina Road, Sandown<br />
+                    Table View, Cape Town
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.branches[0].mapQuery)}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-[#1A7FD4]/50 px-4 py-2 text-xs font-medium text-[#90C8F8] transition-colors hover:bg-[#1A7FD4]/20"
+                    >
+                      <ArrowUpRight className="h-3.5 w-3.5" /> Get Directions
+                    </a>
+                    <a
+                      href={site.phonePrimaryHref}
+                      className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/70 transition-colors hover:bg-white/10"
+                    >
+                      <Phone className="h-3.5 w-3.5" /> {site.phonePrimary}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Khayelitsha branch */}
+            <ScrollReveal delay={100}>
+              <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-500 hover:border-[#1A7FD4]/40 hover:bg-white/8">
+                {/* Branch image */}
+                <div className="relative h-64 overflow-hidden bg-[#162019]">
+                  <img
+                    src={images.branchKhayelitsha}
+                    alt="VITO Med & Aesthetics – Khayelitsha branch"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1929] via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-5">
+                    <span className="rounded-full bg-[#6E7F63] px-3 py-1 text-xs font-semibold uppercase tracking-widest text-white">
+                      Khayelitsha
+                    </span>
+                  </div>
+                </div>
+                {/* Branch info */}
+                <div className="px-7 py-7">
+                  <h3 className="font-cormorant-garamond text-2xl font-semibold text-white">
+                    VITO Med &amp; Aesthetics — Khayelitsha
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/60">
+                    70 Ngcwalazi Drive<br />
+                    Litha Park, Khayelitsha<br />
+                    Cape Town
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.branches[1].mapQuery)}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-[#1A7FD4]/50 px-4 py-2 text-xs font-medium text-[#90C8F8] transition-colors hover:bg-[#1A7FD4]/20"
+                    >
+                      <ArrowUpRight className="h-3.5 w-3.5" /> Get Directions
+                    </a>
+                    <a
+                      href={site.phonePrimaryHref}
+                      className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/70 transition-colors hover:bg-white/10"
+                    >
+                      <Phone className="h-3.5 w-3.5" /> {site.phonePrimary}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Hours note */}
+          <ScrollReveal>
+            <p className="mt-10 text-center text-sm text-white/40">
+              Mon–Fri 08:30–18:00 &nbsp;·&nbsp; Sat 09:00–14:00 &nbsp;·&nbsp; Sun &amp; Public Holidays Closed
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* ============ FINAL CTA ============ */}
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-24 md:pb-28">
         <ScrollReveal>
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2A3B30] via-[#1F2A24] to-[#3A4A3C] px-8 py-16 text-center sm:px-16 sm:py-20">
-            <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[#B89968]/15 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0D2040] via-[#0A1929] to-[#0F2A50] px-8 py-16 text-center sm:px-16 sm:py-20">
+            <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[#1A7FD4]/15 blur-3xl" />
             <div className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-[#6E7F63]/20 blur-3xl" />
             <div className="relative">
               <Eyebrow light>Book Your Visit</Eyebrow>
@@ -437,7 +539,7 @@ export default function HomePage() {
               <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#B89968] px-7 py-3.5 text-sm font-medium text-[#1F2A24] transition-colors hover:bg-[#CBB083]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1A7FD4] px-7 py-3.5 text-sm font-medium text-white transition-colors hover:bg-[#0F5FA8]"
                 >
                   <CalendarCheck className="h-4 w-4" />
                   Book an Appointment
@@ -451,7 +553,7 @@ export default function HomePage() {
                 </a>
               </div>
               <div className="mt-8 flex items-center justify-center gap-2 text-sm text-white/60">
-                <Clock className="h-4 w-4 text-[#B89968]" />
+                <Clock className="h-4 w-4 text-[#1A7FD4]" />
                 Mon–Fri 08:30–18:00 · Sat 09:00–14:00
               </div>
             </div>

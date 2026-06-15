@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
@@ -37,7 +37,7 @@ const initialState: FormState = {
 };
 
 const fieldClass =
-  'w-full rounded-lg border border-[#E8E2D6] bg-white px-4 py-3 text-sm text-[#1F2A24] placeholder:text-[#9AA093] transition-colors focus:border-[#6E7F63] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6E7F63]/30';
+  'w-full rounded-lg border border-[#B0CFEE] bg-white px-4 py-3 text-sm text-[#1F2A24] placeholder:text-[#7B9AAE] transition-colors focus:border-[#6E7F63] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6E7F63]/30';
 
 const labelClass = 'mb-1.5 block text-xs font-medium uppercase tracking-[0.14em] text-[#6E7F63]';
 
@@ -205,7 +205,7 @@ export default function AppointmentForm() {
           </>
         )}
       </button>
-      <p className="text-center text-xs text-[#9AA093]">
+      <p className="text-center text-xs text-[#7B9AAE]">
         We'll never share your details. Confidential, in line with the POPI Act.
       </p>
     </form>

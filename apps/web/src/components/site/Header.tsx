@@ -32,7 +32,7 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* â”€â”€ Utility strip â”€â”€ */}
-      <div className="bg-[#1F2A24] text-white">
+      <div className="bg-[#0A1929] text-white">
         <div className="mx-auto flex h-9 max-w-7xl items-center justify-center gap-1 px-5 text-xs sm:justify-between sm:px-8">
           <div className="flex items-center gap-1">
             <a
@@ -53,7 +53,7 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
           </div>
           <span className="hidden items-center gap-1.5 text-white/85 lg:inline-flex">
             <MapPin className="h-3.5 w-3.5" />
-            Table View &amp; Khayelitsha Â· Cape Town
+            Table View &amp; Khayelitsha &middot; Cape Town
           </span>
         </div>
       </div>
@@ -66,21 +66,19 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
             : 'glass-nav'
         }`}
       >
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="mx-auto max-w-7xl pl-3 pr-5 sm:pl-4 sm:pr-8">
           <div className="flex h-[68px] items-center justify-between gap-4">
             {/* Brand */}
             <Link href="/" className="flex shrink-0 items-center group">
-              <div
-                className={`rounded-lg transition-all duration-300 ${
-                  isTransparent ? 'bg-white/95 px-2.5 py-1.5 shadow-lg' : ''
+              <img
+                src="/vito-logo.jpeg"
+                alt="VITO Med & Aesthetics"
+                className={`h-14 w-14 rounded-full object-cover shadow-sm transition-transform duration-300 group-hover:scale-[1.04] ${
+                  isTransparent
+                    ? 'border-2 border-white/85 shadow-lg'
+                    : 'border-2 border-[#1A7FD4]/35'
                 }`}
-              >
-                <img
-                  src="/vito-logo.jpeg"
-                  alt="VITO Med & Aesthetics"
-                  className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
-                />
-              </div>
+              />
             </Link>
 
             {/* Desktop nav */}
@@ -101,7 +99,7 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
                   >
                     {link.label}
                     <span
-                      className={`absolute -bottom-2 left-0 h-0.5 rounded-full bg-[#B89968] transition-all duration-300 ${
+                      className={`absolute -bottom-2 left-0 h-0.5 rounded-full bg-[#1A7FD4] transition-all duration-300 ${
                         active ? 'w-full' : 'w-0'
                       }`}
                     />
@@ -129,7 +127,7 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
                   className={`xl:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border transition-colors ${
                     isTransparent
                       ? 'border-white/40 bg-white/10 text-white backdrop-blur-sm'
-                      : 'border-[#E8E2D6] text-[#1F2A24]'
+                      : 'border-[#B0CFEE] text-[#1F2A24]'
                   }`}
                 >
                   <Menu className="h-5 w-5" />
@@ -137,19 +135,22 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
               </SheetTrigger>
               <SheetContent
                 side="right"
-                className="w-[86%] max-w-sm border-l border-[#E8E2D6] bg-[#FAF7F1] p-0"
+                className="w-[86%] max-w-sm border-l border-[#B0CFEE] bg-[#E8F4FF] p-0"
               >
                 <div className="flex h-full flex-col">
                   <SheetTitle className="sr-only">VITO Med &amp; Aesthetics navigation</SheetTitle>
                   <SheetDescription className="sr-only">
                     Browse pages and contact options
                   </SheetDescription>
-                  <div className="border-b border-[#E8E2D6] px-6 py-4">
+                  <div className="flex items-center gap-3 border-b border-[#B0CFEE] px-6 py-4">
                     <img
                       src="/vito-logo.jpeg"
                       alt="VITO Med & Aesthetics"
-                      className="h-16 w-auto object-contain"
+                      className="h-14 w-14 rounded-full border-2 border-[#1A7FD4]/35 object-cover shadow-sm"
                     />
+                    <span className="font-cormorant-garamond text-lg font-semibold text-[#1F2A24]">
+                      VITO Med &amp; Aesthetics
+                    </span>
                   </div>
                   <nav className="flex flex-col px-3 py-4">
                     {navLinks.map((link) => (
@@ -167,7 +168,7 @@ export default function Header({ overlay = false }: { overlay?: boolean }) {
                       </SheetClose>
                     ))}
                   </nav>
-                  <div className="mt-auto space-y-3 border-t border-[#E8E2D6] px-6 py-6">
+                  <div className="mt-auto space-y-3 border-t border-[#B0CFEE] px-6 py-6">
                     <a
                       href={site.whatsappHref}
                       target="_blank"

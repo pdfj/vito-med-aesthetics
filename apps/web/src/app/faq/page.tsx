@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { Phone, Mail, CalendarCheck } from 'lucide-react';
 import Header from '@/components/site/Header';
 import Footer from '@/components/site/Footer';
@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function FaqPage() {
   return (
-    <main className="bg-[#FAF7F1] text-[#1F2A24]">
+    <main className="bg-[#E8F4FF] text-[#1F2A24]">
       <Header />
       <PageHero
         crumb="FAQ"
@@ -38,7 +38,7 @@ export default function FaqPage() {
               <AccordionItem
                 key={faq.question}
                 value={`item-${i}`}
-                className="border-b border-[#E8E2D6]"
+                className="border-b border-[#B0CFEE]"
               >
                 <AccordionTrigger className="py-5 text-base font-medium text-[#1F2A24] hover:no-underline">
                   {faq.question}
@@ -53,7 +53,7 @@ export default function FaqPage() {
 
         {/* Still have questions */}
         <ScrollReveal>
-          <div className="mt-12 rounded-2xl border border-[#E8E2D6] bg-white p-8 text-center">
+          <div className="mt-12 rounded-2xl border border-[#B0CFEE] bg-white p-8 text-center">
             <h2 className="font-cormorant-garamond text-2xl font-semibold text-[#1F2A24]">
               Still have a question?
             </h2>
@@ -72,7 +72,7 @@ export default function FaqPage() {
               </a>
               <a
                 href={site.emailHref}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E8E2D6] px-6 py-3 text-sm font-medium text-[#1F2A24] transition-colors hover:border-[#6E7F63]"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#B0CFEE] px-6 py-3 text-sm font-medium text-[#1F2A24] transition-colors hover:border-[#6E7F63]"
               >
                 <Mail className="h-4 w-4" />
                 {site.email}

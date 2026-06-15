@@ -7,39 +7,44 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const images = {
-  // ── Main site images (local) ───────────────────────────────────────────────
-  hero:       '/images/stock/clinic-reception.png',
-  reception:  '/images/stock/reception.jpg',
-  ivDrip:     '/images/stock/iv-drip.jpg',
-  aesthetics: '/images/stock/aesthetics.jpg',
+  // ── Main site images ───────────────────────────────────────────────────────
+  hero:       '/images/clinic/dr-precious-iv-prep.jpg',
+  reception:  '/images/clinic/iv-drip-2.jpg',
+  ivDrip:     '/images/clinic/iv-drip-1.jpg',
+  aesthetics: '/images/clinic/aesthetics-consultation.jpg',
   travel:     '/images/stock/travel.jpg',
-  medical:    '/images/stock/medical.jpg',
+  medical:    '/images/clinic/aesthetics-injection.jpg',
   weightLoss: '/images/stock/weight-loss.jpg',
+  branchTableView:   '/images/clinic/branch-exterior.jpg',
+  branchKhayelitsha: '/images/clinic/skincare-products-2.jpg',
 } as const;
 
 // ── "What We Offer" pillar background images (faded + blurred behind cards) ──
-// Drop your Gemini-generated images into /images/services/ with these names.
-// If a file is missing, the card simply shows its solid background — no breakage.
 export const pillarBackgrounds: Record<string, string> = {
-  'medical-aesthetics': '/images/stock/aesthetics.jpg',
+  'medical-aesthetics': '/images/clinic/aesthetics-botox.jpg',
   'travel-clinic': '/images/stock/travel.jpg',
-  'medical-care': '/images/stock/medical.jpg',
+  'medical-care': '/images/clinic/dr-precious-portrait.jpg',
 };
 
 // ── Founder photo (used on homepage founder section) ─────────────────────────
-export const founderImage = '/images/team/dr-precious.jpg';
+export const founderImage = '/images/clinic/dr-precious-portrait.jpg';
 
-// ── Gallery images (local) ───────────────────────────────────────────────────
-// Add real photos by dropping them into /images/gallery/ and adding a line here.
+// ── Gallery images ───────────────────────────────────────────────────────────
 export const galleryImages: { src: string; caption: string; category: string }[] = [
-  { src: '/images/stock/aesthetics.jpg', caption: 'Aesthetic Treatments', category: 'Treatments' },
-  { src: '/images/stock/iv-drip.jpg', caption: 'IV Vitamin Drips', category: 'Treatments' },
-  { src: '/images/stock/weight-loss.jpg', caption: 'Medical Weight Loss', category: 'Treatments' },
-  { src: '/images/stock/reception.jpg', caption: 'Our Clinic Space', category: 'Clinic' },
-  { src: '/images/stock/travel.jpg', caption: 'Travel Clinic', category: 'Clinic' },
-  { src: '/images/stock/medical.jpg', caption: 'Medical Care', category: 'Clinic' },
-  // Add more, e.g.:
-  // { src: '/images/gallery/before-after-1.jpg', caption: 'Skin Glow Results', category: 'Results' },
+  { src: '/images/clinic/aesthetics-consultation.jpg', caption: 'Aesthetic Consultation', category: 'Treatments' },
+  { src: '/images/clinic/aesthetics-botox.jpg',         caption: 'Anti-Wrinkle Injections', category: 'Treatments' },
+  { src: '/images/clinic/facial-treatment-1.jpg',       caption: 'Chemical Peel Treatment', category: 'Treatments' },
+  { src: '/images/clinic/facial-treatment-3.jpg',       caption: 'Skin Brightening Facial', category: 'Treatments' },
+  { src: '/images/clinic/led-therapy.jpg',              caption: 'LED Light Therapy', category: 'Treatments' },
+  { src: '/images/clinic/mens-facial-1.jpg',            caption: 'Men\'s Skin Treatment', category: 'Treatments' },
+  { src: '/images/clinic/iv-drip-1.jpg',               caption: 'IV Vitamin Drip', category: 'Treatments' },
+  { src: '/images/clinic/iv-drip-2.jpg',               caption: 'IV Wellness Session', category: 'Treatments' },
+  { src: '/images/clinic/iv-drip-4.jpg',               caption: 'IV Drip — Happy Patient', category: 'Treatments' },
+  { src: '/images/clinic/dr-precious-portrait.jpg',     caption: 'Dr Precious Garnett', category: 'Clinic' },
+  { src: '/images/clinic/dr-precious-portrait-2.jpg',   caption: 'Dr Precious — VITO Founder', category: 'Clinic' },
+  { src: '/images/clinic/branch-exterior.jpg',          caption: 'VITO Med — Table View', category: 'Clinic' },
+  { src: '/images/clinic/clinic-event.jpg',             caption: 'Community Clinic Event', category: 'Clinic' },
+  { src: '/images/clinic/skincare-products.jpg',        caption: 'VITO Skincare Products', category: 'Clinic' },
 ];
 
 // ── Blog post images (local) ─────────────────────────────────────────────────

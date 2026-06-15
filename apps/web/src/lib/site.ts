@@ -1,4 +1,4 @@
-// Central business configuration for VITO Med & Aesthetics.
+﻿// Central business configuration for VITO Med & Aesthetics.
 // All details sourced from the clinic. Update here to change everywhere.
 
 export const site = {
@@ -83,15 +83,16 @@ export const navLinks = [
   { label: 'Contact', href: '/contact' },
 ] as const;
 
-// Brand palette (use as Tailwind arbitrary values e.g. text-[#1F2A24]).
+// Brand palette — Blue + Green theme.
 export const brand = {
-  cream: '#FAF7F1',
-  creamDeep: '#F2ECE0',
+  cream: '#E8F4FF',
+  creamDeep: '#D8EEFF',
   ink: '#1F2A24',
   bodyText: '#5B6157',
   sage: '#6E7F63',
   sageDeep: '#4F5E46',
-  gold: '#B89968',
-  goldDeep: '#9A7C4F',
-  border: '#E8E2D6',
+  blue: '#1A7FD4',
+  blueDeep: '#0F5FA8',
+  blueLight: '#90C8F8',
+  border: '#B0CFEE',
 } as const;

@@ -181,8 +181,8 @@ html {
 
 /* --- Pulse glow (CTAs, accents) --- */
 @keyframes vito-glow-pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(184,153,104,0.35), 0 0 22px 2px rgba(184,153,104,0.18); }
-    50% { box-shadow: 0 0 0 6px rgba(184,153,104,0), 0 0 34px 6px rgba(184,153,104,0.28); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(26,127,212,0.40), 0 0 22px 2px rgba(26,127,212,0.22); }
+    50% { box-shadow: 0 0 0 8px rgba(26,127,212,0), 0 0 40px 8px rgba(26,127,212,0.32); }
 }
 .vito-glow { animation: vito-glow-pulse 3.2s ease-in-out infinite; }
 
@@ -241,20 +241,20 @@ html {
 
 /* --- Hero heading: static white -> blue vertical fade on the letters --- */
 .vito-hero-fade {
-    background: linear-gradient(180deg, #FFFFFF 0%, #E2EFFB 34%, #8FC0EC 68%, #9A7C4F 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, #E2EFFB 34%, #8FC0EC 68%, #0F5FA8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
-/* --- Animated gold gradient text --- */
+/* --- Animated blue gradient text --- */
 @keyframes vito-text-shimmer {
     0% { background-position: 0% 50%; }
     100% { background-position: 200% 50%; }
 }
 .vito-gradient-text {
-    background: linear-gradient(90deg, #B89968, #E6D2A8, #B89968, #9A7C4F);
+    background: linear-gradient(90deg, #1A7FD4, #6EC1E4, #4DA8DA, #0F5FA8, #1A7FD4);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;

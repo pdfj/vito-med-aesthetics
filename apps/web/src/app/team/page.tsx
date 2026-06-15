@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { CalendarCheck } from 'lucide-react';
 import Header from '@/components/site/Header';
 import Footer from '@/components/site/Footer';
@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function TeamPage() {
   return (
-    <main className="bg-[#FAF7F1] text-[#1F2A24]">
+    <main className="bg-[#E8F4FF] text-[#1F2A24]">
       <Header />
       <PageHero
         crumb="Team"
@@ -30,7 +30,7 @@ export default function TeamPage() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {team.map((member, i) => (
             <ScrollReveal key={member.name} delay={i * 100}>
-              <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#E8E2D6] bg-white vito-lift">
+              <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#B0CFEE] bg-white vito-lift">
                 <TeamPhoto src={member.image} alt={member.name} initials={member.initials} />
                 <div className="flex flex-1 flex-col p-7">
                   <h2 className="font-cormorant-garamond text-2xl font-semibold text-[#1F2A24]">
@@ -41,13 +41,13 @@ export default function TeamPage() {
                   </p>
                   <p className="mt-4 text-sm leading-relaxed text-[#5B6157]">{member.bio}</p>
                   {member.credentials ? (
-                    <div className="mt-5 space-y-2 border-t border-[#E8E2D6] pt-5">
+                    <div className="mt-5 space-y-2 border-t border-[#B0CFEE] pt-5">
                       {member.credentials.map((c) => (
                         <div
                           key={c}
                           className="flex items-start gap-2 text-xs leading-relaxed text-[#5B6157]"
                         >
-                          <span className="text-[#B89968]">—</span>
+                          <span className="text-[#1A7FD4]">—</span>
                           {c}
                         </div>
                       ))}
@@ -67,7 +67,7 @@ export default function TeamPage() {
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-24">
         <ScrollReveal>
-          <div className="flex flex-col items-center justify-between gap-6 rounded-3xl border border-[#E8E2D6] bg-white px-8 py-12 text-center sm:flex-row sm:text-left">
+          <div className="flex flex-col items-center justify-between gap-6 rounded-3xl border border-[#B0CFEE] bg-white px-8 py-12 text-center sm:flex-row sm:text-left">
             <div>
               <h2 className="font-cormorant-garamond text-2xl font-semibold text-[#1F2A24] sm:text-3xl">
                 Come and meet us
@@ -88,7 +88,7 @@ export default function TeamPage() {
                 href={site.socials.facebook}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E8E2D6] px-6 py-3 text-sm font-medium text-[#1F2A24] transition-colors hover:border-[#6E7F63]"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#B0CFEE] px-6 py-3 text-sm font-medium text-[#1F2A24] transition-colors hover:border-[#6E7F63]"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />

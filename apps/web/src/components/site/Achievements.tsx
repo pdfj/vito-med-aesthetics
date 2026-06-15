@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import ScrollReveal from '@/components/site/ScrollReveal';
@@ -8,7 +8,7 @@ function LogoCard({ name, logo, delay }: { name: string; logo?: string; delay: n
   const [errored, setErrored] = useState(false);
   return (
     <ScrollReveal delay={delay}>
-      <div className="vito-lift group flex aspect-[3/2] items-center justify-center rounded-2xl border border-[#E8E2D6] bg-white p-6">
+      <div className="vito-lift group flex aspect-[3/2] items-center justify-center rounded-2xl border border-[#B0CFEE] bg-white p-6">
         {logo && !errored ? (
           <img
             src={logo}
@@ -29,13 +29,13 @@ function LogoCard({ name, logo, delay }: { name: string; logo?: string; delay: n
 
 export default function Achievements({ light = false }: { light?: boolean }) {
   return (
-    <section className={light ? 'bg-white' : 'bg-[#FAF7F1]'}>
+    <section className={light ? 'bg-white' : 'bg-[#E8F4FF]'}>
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-24 md:py-28">
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
           {/* Heading */}
           <ScrollReveal className="lg:col-span-4">
-            <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.24em] text-[#B89968]">
-              <span className="h-px w-6 bg-[#B89968]" />
+            <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.24em] text-[#1A7FD4]">
+              <span className="h-px w-6 bg-[#1A7FD4]" />
               Credentials
             </span>
             <h2 className="mt-4 font-cormorant-garamond text-4xl font-semibold leading-[1.05] tracking-tight text-[#1F2A24] sm:text-5xl">

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import {
   CalendarCheck,
   FlaskConical,
@@ -66,7 +66,7 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#FAF7F1] text-[#1F2A24]">
+    <main className="bg-[#E8F4FF] text-[#1F2A24]">
       <Header />
       <PageHero
         crumb="About"
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 first.
               </p>
             </div>
-            <div className="mt-8 rounded-xl border border-[#E8E2D6] bg-white p-6">
+            <div className="mt-8 rounded-xl border border-[#B0CFEE] bg-white p-6">
               <p className="font-cormorant-garamond text-xl font-semibold text-[#1F2A24]">
                 Proudly South African
               </p>
@@ -109,7 +109,7 @@ export default function AboutPage() {
           </ScrollReveal>
 
           <ScrollReveal delay={120}>
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#E8E2D6] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#B0CFEE] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
               {images.reception ? (
                 <img
                   src={images.reception}
@@ -123,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission band */}
-      <section className="bg-[#1F2A24] py-24 md:py-28">
+      <section className="bg-[#0A1929] py-24 md:py-28">
         <div className="mx-auto max-w-4xl px-5 sm:px-8 text-center">
           <ScrollReveal>
             <Eyebrow light>Our Mission</Eyebrow>
@@ -145,7 +145,7 @@ export default function AboutPage() {
             const Icon = value.icon;
             return (
               <ScrollReveal key={value.title} delay={i * 100}>
-                <div className="flex h-full flex-col rounded-2xl border border-[#E8E2D6] bg-white p-8">
+                <div className="flex h-full flex-col rounded-2xl border border-[#B0CFEE] bg-white p-8">
                   <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#6E7F63]/10 text-[#4F5E46]">
                     <Icon className="h-5 w-5" />
                   </span>
@@ -161,7 +161,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision / beyond procedures */}
-      <section className="bg-white border-y border-[#E8E2D6] py-24 md:py-28">
+      <section className="bg-white border-y border-[#B0CFEE] py-24 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -175,8 +175,8 @@ export default function AboutPage() {
               const Icon = item.icon;
               return (
                 <ScrollReveal key={item.title} delay={i * 100}>
-                  <div className="flex h-full flex-col rounded-2xl border border-[#E8E2D6] bg-[#FAF7F1] p-8">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#B89968]/15 text-[#9A7C4F]">
+                  <div className="flex h-full flex-col rounded-2xl border border-[#B0CFEE] bg-[#E8F4FF] p-8">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1A7FD4]/15 text-[#0F5FA8]">
                       <Icon className="h-5 w-5" />
                     </span>
                     <h3 className="mt-6 text-lg font-medium text-[#1F2A24]">{item.title}</h3>
@@ -194,14 +194,14 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
         <ScrollReveal>
-          <div className="flex flex-col items-center gap-6 rounded-3xl bg-gradient-to-br from-[#2A3B30] via-[#1F2A24] to-[#3A4A3C] px-8 py-14 text-center">
-            <Eye className="h-8 w-8 text-[#B89968]" />
+          <div className="flex flex-col items-center gap-6 rounded-3xl bg-gradient-to-br from-[#0D2040] via-[#0A1929] to-[#0F2A50] px-8 py-14 text-center">
+            <Eye className="h-8 w-8 text-[#1A7FD4]" />
             <h2 className="max-w-2xl font-cormorant-garamond text-3xl font-semibold leading-tight text-white sm:text-4xl">
               Experience the VITO difference for yourself
             </h2>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#B89968] px-7 py-3.5 text-sm font-medium text-[#1F2A24] transition-colors hover:bg-[#CBB083]"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1A7FD4] px-7 py-3.5 text-sm font-medium text-[#1F2A24] transition-colors hover:bg-[#0F5FA8]"
             >
               <CalendarCheck className="h-4 w-4" />
               Book an Appointment

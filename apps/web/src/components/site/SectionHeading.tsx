@@ -4,10 +4,10 @@ export function Eyebrow({ children, light = false }: { children: ReactNode; ligh
   return (
     <span
       className={`inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.24em] ${
-        light ? 'text-[#B89968]' : 'text-[#6E7F63]'
+        light ? 'text-[#1A7FD4]' : 'text-[#6E7F63]'
       }`}
     >
-      <span className="h-px w-6 bg-[#B89968]" />
+      <span className="h-px w-6 bg-[#1A7FD4]" />
       {children}
     </span>
   );

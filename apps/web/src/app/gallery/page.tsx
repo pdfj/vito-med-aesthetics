@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { CalendarCheck, ImageIcon } from 'lucide-react';
 import Header from '@/components/site/Header';
 import Footer from '@/components/site/Footer';
@@ -17,7 +17,7 @@ const categories = ['All', 'Treatments', 'Clinic', 'Results', 'Team'];
 
 export default function GalleryPage() {
   return (
-    <main className="bg-[#FAF7F1] text-[#1F2A24]">
+    <main className="bg-[#E8F4FF] text-[#1F2A24]">
       <Header />
       <PageHero
         crumb="Gallery"
@@ -35,7 +35,7 @@ export default function GalleryPage() {
               className={`cursor-pointer rounded-full px-5 py-2 text-sm font-medium transition-colors ${
                 cat === 'All'
                   ? 'bg-[#6E7F63] text-white'
-                  : 'border border-[#E8E2D6] bg-white text-[#5B6157] hover:border-[#6E7F63]'
+                  : 'border border-[#B0CFEE] bg-white text-[#5B6157] hover:border-[#6E7F63]'
               }`}
             >
               {cat}
@@ -49,16 +49,16 @@ export default function GalleryPage() {
         <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
           {galleryImages.map((img, i) => (
             <ScrollReveal key={i} delay={i * 60}>
-              <div className="mb-5 break-inside-avoid overflow-hidden rounded-2xl border border-[#E8E2D6] bg-white group">
+              <div className="mb-5 break-inside-avoid overflow-hidden rounded-2xl border border-[#B0CFEE] bg-white group">
                 <div className="relative overflow-hidden">
                   <img
                     src={img.src}
                     alt={img.caption}
                     className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1F2A24]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1929]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                    <span className="text-xs font-medium uppercase tracking-[0.16em] text-[#B89968]">
+                    <span className="text-xs font-medium uppercase tracking-[0.16em] text-[#1A7FD4]">
                       {img.category}
                     </span>
                     <p className="text-sm font-medium text-white">{img.caption}</p>
@@ -71,7 +71,7 @@ export default function GalleryPage() {
 
         {/* Coming soon notice */}
         <ScrollReveal>
-          <div className="mt-8 flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#E8E2D6] bg-white py-16 px-8 text-center">
+          <div className="mt-8 flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#B0CFEE] bg-white py-16 px-8 text-center">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#6E7F63]/10 text-[#4F5E46]">
               <ImageIcon className="h-6 w-6" />
             </span>
@@ -94,7 +94,7 @@ export default function GalleryPage() {
       </section>
 
       {/* ── Branches note ── */}
-      <section className="bg-[#1F2A24] py-14">
+      <section className="bg-[#0A1929] py-14">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {[
@@ -102,7 +102,7 @@ export default function GalleryPage() {
               { name: 'Khayelitsha Branch', address: '70 Ngcwalazi Drive, Litha Park, Khayelitsha, Cape Town' },
             ].map((branch) => (
               <div key={branch.name} className="rounded-2xl border border-white/10 bg-white/5 p-7">
-                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#B89968]">
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#1A7FD4]">
                   {branch.name}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-white/70">{branch.address}</p>

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useRef, useState } from 'react';
 import { MessageSquare, X, Send, Sparkles } from 'lucide-react';
@@ -105,18 +105,18 @@ export default function ChatWidget() {
         {open ? <X className="h-6 w-6" /> : <MessageSquare className="h-6 w-6" />}
         {!open && (
           <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#B89968] opacity-75" />
-            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#B89968]" />
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#1A7FD4] opacity-75" />
+            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#1A7FD4]" />
           </span>
         )}
       </button>
 
       {/* Panel */}
       {open && (
-        <div className="vito-pop fixed bottom-24 right-5 z-50 flex h-[520px] w-[min(380px,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-3xl border border-[#E8E2D6] bg-white shadow-2xl">
+        <div className="vito-pop fixed bottom-24 right-5 z-50 flex h-[520px] w-[min(380px,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-3xl border border-[#B0CFEE] bg-white shadow-2xl">
           {/* Header */}
-          <div className="flex items-center gap-3 bg-gradient-to-r from-[#2A3B30] to-[#1F2A24] px-5 py-4 text-white">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#B89968]/20 text-[#D9C7A3]">
+          <div className="flex items-center gap-3 bg-gradient-to-r from-[#0D2040] to-[#0A1929] px-5 py-4 text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1A7FD4]/20 text-[#90C8F8]">
               <Sparkles className="h-5 w-5" />
             </span>
             <div className="leading-tight">
@@ -129,14 +129,14 @@ export default function ChatWidget() {
           </div>
 
           {/* Messages */}
-          <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto bg-[#FAF7F1] px-4 py-4">
+          <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto bg-[#E8F4FF] px-4 py-4">
             {msgs.map((m, i) => (
               <div key={i} className={`flex ${m.from === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div
                   className={`max-w-[80%] whitespace-pre-line rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                     m.from === 'user'
                       ? 'rounded-br-sm bg-[#6E7F63] text-white'
-                      : 'rounded-bl-sm border border-[#E8E2D6] bg-white text-[#1F2A24]'
+                      : 'rounded-bl-sm border border-[#B0CFEE] bg-white text-[#1F2A24]'
                   }`}
                 >
                   {m.text}
@@ -145,7 +145,7 @@ export default function ChatWidget() {
             ))}
             {typing && (
               <div className="flex justify-start">
-                <div className="flex gap-1 rounded-2xl rounded-bl-sm border border-[#E8E2D6] bg-white px-4 py-3">
+                <div className="flex gap-1 rounded-2xl rounded-bl-sm border border-[#B0CFEE] bg-white px-4 py-3">
                   <span className="vito-dot h-2 w-2 rounded-full bg-[#6E7F63]" />
                   <span className="vito-dot h-2 w-2 rounded-full bg-[#6E7F63]" />
                   <span className="vito-dot h-2 w-2 rounded-full bg-[#6E7F63]" />
@@ -155,12 +155,12 @@ export default function ChatWidget() {
           </div>
 
           {/* Quick replies */}
-          <div className="flex gap-2 overflow-x-auto border-t border-[#E8E2D6] bg-white px-3 py-2.5">
+          <div className="flex gap-2 overflow-x-auto border-t border-[#B0CFEE] bg-white px-3 py-2.5">
             {QUICK.map((q) => (
               <button
                 key={q}
                 onClick={() => send(q)}
-                className="whitespace-nowrap rounded-full border border-[#E8E2D6] bg-[#FAF7F1] px-3 py-1.5 text-xs text-[#5B6157] transition-colors hover:border-[#6E7F63] hover:text-[#1F2A24]"
+                className="whitespace-nowrap rounded-full border border-[#B0CFEE] bg-[#E8F4FF] px-3 py-1.5 text-xs text-[#5B6157] transition-colors hover:border-[#6E7F63] hover:text-[#1F2A24]"
               >
                 {q}
               </button>
@@ -173,13 +173,13 @@ export default function ChatWidget() {
               e.preventDefault();
               send(input);
             }}
-            className="flex items-center gap-2 border-t border-[#E8E2D6] bg-white px-3 py-3"
+            className="flex items-center gap-2 border-t border-[#B0CFEE] bg-white px-3 py-3"
           >
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your question…"
-              className="flex-1 rounded-full border border-[#E8E2D6] bg-[#FAF7F1] px-4 py-2.5 text-sm text-[#1F2A24] outline-none transition-colors focus:border-[#6E7F63]"
+              className="flex-1 rounded-full border border-[#B0CFEE] bg-[#E8F4FF] px-4 py-2.5 text-sm text-[#1F2A24] outline-none transition-colors focus:border-[#6E7F63]"
             />
             <button
               type="submit"
