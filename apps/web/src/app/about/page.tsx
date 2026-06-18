@@ -110,13 +110,11 @@ export default function AboutPage() {
 
           <ScrollReveal delay={120}>
             <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#B0CFEE] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
-              {images.reception ? (
-                <img
-                  src={images.reception}
-                  alt="Inside VITO Med & Aesthetics"
-                  className="h-full w-full object-cover"
-                />
-              ) : null}
+              <img
+                src="/images/clinic/iv-drip-4.jpg"
+                alt="Patient receiving treatment at VITO Med & Aesthetics"
+                className="h-full w-full object-cover"
+              />
             </div>
           </ScrollReveal>
         </div>

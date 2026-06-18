@@ -38,7 +38,7 @@ export const pillars: Pillar[] = [
       {
         name: 'Treatment for Hyperpigmentation',
         description:
-          'Medical-grade treatment for dark spots, uneven skin tone and pigmentation using targeted peels, laser, IPL and prescription-grade topicals tailored to your skin.',
+          'Medical-grade treatment for dark spots, uneven skin tone and pigmentation using targeted peels, Skin IV Vitamin drips and prescription-grade topicals tailored to your skin.',
       },
       {
         name: 'Treatment for Acne',
@@ -48,7 +48,7 @@ export const pillars: Pillar[] = [
       {
         name: 'IV Vitamin Drips',
         description:
-          'A full menu of 16 drip formulas administered by a qualified doctor: Skin Glow · Skin Lightening · Glutathione · Anti-Aging · Brain Boost · Energy Boost · Immune System Boost · Libido Boost · Fertility Boost · Detox · Anti-Inflammatory · Sports Endurance · Sports Recovery · VIP Cocktail 5-in-1 (Skin Glow, Energy, Brain, Immune & Detox) · Weight Loss · Weight Gain.',
+          'A full menu of drip formulas administered by a qualified doctor: Skin Glow · Skin Lightening · Glutathione · Anti-Aging · Brain Boost · Energy Boost · Immune System Boost · Libido Boost · Fertility Boost · Detox · Anti-Inflammatory · Sports Endurance · Sports Recovery · VIP Cocktail 5-in-1 (Skin Glow, Energy, Brain, Immune & Detox) · Weight Loss · Weight Gain · Iron Infusion.',
       },
       {
         name: 'Facial Treatments',

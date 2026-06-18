@@ -7,9 +7,9 @@ export const site = {
   founder: 'Dr Precious Garnett',
   tagline: 'Healthy body, Healthy skin.',
   intro:
-    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. Services include Botox, dermal fillers, facial treatments, IV vitamin therapy, weight management support, and body-focused aesthetic procedures.',
+    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View and Khayelitsha, Litha Park offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. Services include Botox, dermal fillers, facial treatments, IV vitamin therapy, weight management support, and body-focused aesthetic procedures.',
   summary:
-    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. The clinic focuses on personalised care, client comfort, and medically guided wellness treatments tailored to individual goals and confidence.',
+    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View and Khayelitsha, Litha Park offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. The clinic focuses on personalised care, client comfort, and medically guided wellness treatments tailored to individual goals and confidence.',
   keywords:
     'skincare, botox, filler, skin treatment, anti-aging, hyperpigmentation, pigmentation, skin glow, aesthetics, medical aesthetics, travel clinic, travel doctor, doctor, travel medical, IV drips, Cape Town',
   legal: 'VITO Med & Aesthetics (Pty) Ltd · 100% black-owned, South African registered business.',
@@ -57,9 +57,8 @@ export const site = {
   mapQuery: 'Sandown Square Business Park, Passerina Road, Sandown, Table View, Cape Town',
   // Hours
   hours: [
-    { day: 'Monday – Friday', time: '08:30 – 18:00' },
-    { day: 'Saturday', time: '09:00 – 14:00' },
-    { day: 'Sunday & Public Holidays', time: 'Closed' },
+    { day: 'Monday – Friday', time: '09:00 – 18:00' },
+    { day: 'Saturday, Sunday & Public Holidays', time: '09:00 – 14:00' },
   ],
   // Socials
   socials: {

@@ -9,27 +9,27 @@ export const faqs: Faq[] = [
   {
     question: 'What is VITO Med & Aesthetics?',
     answer:
-      'VITO Med & Aesthetics is a doctor-led medical practice in Sandown, on the Cape Town West Coast. We offer medical care, a travel clinic and medical aesthetics — all under one roof.',
+      'VITO Med & Aesthetics is a doctor-led medical practice with branches in Sandown (Table View) and Khayelitsha, Litha Park. We offer medical care, a travel clinic and medical aesthetics — all under one roof.',
   },
   {
     question: 'Where are you located?',
     answer:
-      'Block B, Office 207, Sandown Square Business Park, Passerina Road, Sandown, Table View, Cape Town, 7441.',
+      'Table View: Block B, Office 207, Sandown Square Business Park, Passerina Road, Sandown, Table View, Cape Town, 7441. Khayelitsha: 70 Ngcwalazi Drive, Litha Park, Khayelitsha, Cape Town.',
   },
   {
     question: 'What are your operating hours?',
     answer:
-      'Monday to Friday: 08:30 – 18:00, Saturday: 09:00 – 14:00. We are closed on Sundays and public holidays.',
+      'Monday to Friday: 09:00 – 18:00. Saturday, Sunday & Public Holidays: 09:00 – 14:00.',
   },
   {
     question: 'What services do you offer?',
     answer:
-      'Medical care (acute and chronic diagnosis and treatment), a travel clinic (medical assessments, vaccinations, kits and advice) and medical aesthetics (Botox & fillers, chemical/medical peels, laser hair removal, tattoo removal and IV vitamin drips).',
+      'Medical care (acute and chronic diagnosis and treatment), a travel clinic (medical assessments, vaccinations, kits and advice) and medical aesthetics (Botox & fillers, chemical/medical peels, Iron infusions, Weight loss solutions, Fat Dissolving injections and IV vitamin drips).',
   },
   {
     question: 'How can I book an appointment?',
     answer:
-      "Call or WhatsApp us on +27 61 522 9683, email bookings@vitomed-aesthetics.co.za, or send an enquiry through our website and we'll phone you back.",
+      "Call or WhatsApp us on +27 79 872 1230, email info@vitomed.co.za, or send an enquiry through our website and we'll phone you back.",
   },
   {
     question: 'Do you take medical aid?',
