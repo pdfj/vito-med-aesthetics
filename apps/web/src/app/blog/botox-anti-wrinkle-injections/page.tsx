@@ -20,8 +20,8 @@ export default function BotoxBlogPage() {
       <div className="relative bg-[#0A1929] pt-[77px]">
         <div className="relative aspect-[21/7] max-h-[420px] overflow-hidden">
           <img
-            src="/images/clinic/aesthetics-botox.jpg"
-            alt="Anti-wrinkle injection treatment"
+            src="/images/clinic/botox-injection-close.jpg"
+            alt="Botox injection treatment at VITO Med"
             className="h-full w-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1929] via-[#0A1929]/60 to-transparent" />
