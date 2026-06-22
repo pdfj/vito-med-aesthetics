@@ -14,6 +14,16 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'iv-vitamin-drips-cape-town',
+    title: 'IV Vitamin Drips in Cape Town: A Guide to Wellness, Skin Glow & Body Support',
+    excerpt:
+      'Explore our full range of IV vitamin drip therapies — from Skin Glow and Immune Boost to Iron Infusions and Energy Drips. Personalised wellness care under doctor supervision.',
+    image: '/images/clinic/iv-drip-dr-blue.jpg',
+    category: 'IV Therapy',
+    readTime: '7 min read',
+    date: 'June 2026',
+  },
+  {
     slug: 'hyperpigmentation-in-black-skin',
     title: 'Hyperpigmentation in Black African Skin: Causes, Prevention & The Best Treatments for Dark Spots',
     excerpt:
