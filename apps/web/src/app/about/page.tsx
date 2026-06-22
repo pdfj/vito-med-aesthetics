@@ -111,7 +111,7 @@ export default function AboutPage() {
           <ScrollReveal delay={120}>
             <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-[#B0CFEE] bg-gradient-to-br from-[#6E7F63] to-[#4F5E46]">
               <img
-                src="/images/clinic/dr-precious-patient-bag.jpg"
+                src="/images/clinic/dr-precious-iv-with-patient.png"
                 alt="Dr Precious Garnett with patient at VITO Med & Aesthetics"
                 className="h-full w-full object-cover"
               />

@@ -10,6 +10,13 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote:
+      "Vito Med & Aesthetics is theeee best place for all your skin health needs. I first went there for my skin drip, which when I first arrived was met by the amazing Dr Precious herself. She was so friendly and welcoming. From then onwards she introduced me to a whole new world of addressing my skin concerns the right way. Going to her practice was the best thank you my skin deserved. Keep it up Vito Med!",
+    name: 'Unathi Mbebe',
+    detail: 'Lip Filler, Skin Lightening Drip & Skincare · Cape Town',
+    stars: 5,
+  },
+  {
+    quote:
       "I had my iron drip 3 days ago and I'm feeling amazing! Energy levels are up and fatigue is gone. I no longer get dizzy especially when I just got up. Also I did not experience any side effects. Huge thanks to Vito Med & Aesthetics.",
     name: 'Sixolisiwe Mhlaba',
     detail: 'Iron IV Drip · Cape Town',
@@ -76,6 +83,13 @@ export const testimonials: Testimonial[] = [
       "It's the wholistic experience for me! I went for a detox drip but it became such a fun informative session. This is a one-stop shop for your overall healthcare. Take my word for it — I promise you won't regret it. Bring your whole entourage, there is enough space and packages for all their needs.",
     name: 'Tembakazi Sidumo',
     detail: 'Detox IV Drip · Cape Town',
+    stars: 5,
+  },
+  {
+    quote:
+      "Vito Med provides a range of products — they are all about good health and wellness. I took the Sports Recovery Drip since I train a lot but I also get those days where my recovery is not where it needs to be. From the third day I felt my energy levels coming back. I was able to train with the right intensity which resulted in more quality sleep and in turn resting my body well. I didn't know there was even such a product that could do that — a friend introduced me to Vito Med and I couldn't have been more right. I am definitely going back.",
+    name: 'Ayanda Mahlobo',
+    detail: 'Sports Recovery IV Drip · Cape Town',
     stars: 5,
   },
   {
