@@ -14,11 +14,21 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'hyperpigmentation-in-black-skin',
+    title: 'Hyperpigmentation in Black African Skin: Causes, Prevention & The Best Treatments for Dark Spots',
+    excerpt:
+      'Hyperpigmentation is one of the most common skin concerns affecting Black African skin. Dr Garnett explains causes, the best professional treatments and daily habits to prevent dark spots.',
+    image: '/images/clinic/facial-microneedling.jpg',
+    category: 'Skin Concerns',
+    readTime: '8 min read',
+    date: 'June 2026',
+  },
+  {
     slug: 'botox-anti-wrinkle-injections',
     title: 'Botox: Understanding Wrinkles and How Anti-Wrinkle Injections Work',
     excerpt:
       'Everything you need to know about Botox for face treatments — how wrinkles form, how to prevent them, and what treatment options are available from chemical peels to anti-wrinkle injections.',
-    image: '/images/clinic/aesthetics-botox.jpg',
+    image: '/images/clinic/botox-injection-close.jpg',
     category: 'Aesthetics',
     readTime: '7 min read',
     date: 'June 2026',
@@ -28,7 +38,7 @@ const posts = [
     title: 'Dermal Fillers Explained: Everything You Need to Know About Facial Fillers',
     excerpt:
       'What are dermal fillers, how do they work, and which areas can they treat? Dr Precious breaks down cheek fillers, lip enhancement, tear trough, jawline definition and more.',
-    image: '/images/clinic/aesthetics-consultation.jpg',
+    image: '/images/clinic/dr-lip-filler-injection.jpg',
     category: 'Aesthetics',
     readTime: '8 min read',
     date: 'June 2026',
