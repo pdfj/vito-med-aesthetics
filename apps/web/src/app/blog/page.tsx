@@ -14,6 +14,16 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'anti-aging-cosmetic-procedures',
+    title: 'Anti-Aging Cosmetic Procedures: Advanced Skin Rejuvenation Treatments at VITO Med',
+    excerpt:
+      'Microneedling, chemical peels, photo dynamic therapy, dermaplaning and medical-grade skincare — explore our advanced anti-aging treatments in Cape Town with personalised treatment plans.',
+    image: '/images/clinic/antiaging-consultation.jpg',
+    category: 'Skin Rejuvenation',
+    readTime: '8 min read',
+    date: 'June 2026',
+  },
+  {
     slug: 'iv-vitamin-drips-cape-town',
     title: 'IV Vitamin Drips in Cape Town: A Guide to Wellness, Skin Glow & Body Support',
     excerpt:
