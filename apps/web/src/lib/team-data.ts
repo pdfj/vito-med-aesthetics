@@ -12,7 +12,7 @@ export const team: TeamMember[] = [
     name: 'Dr Precious Garnett',
     role: 'CEO & Medical Doctor',
     initials: 'PG',
-    image: '/images/team/dr-precious.jpg',
+    image: '/images/clinic/dr-precious-portrait-orange.jpg',
     bio: 'Founder of VITO Med & Aesthetics, Dr Garnett is a qualified medical doctor with over 15 years of experience treating a wide range of medical and surgical conditions in South Africa. She leads every aspect of patient care with warmth, precision and full transparency.',
     credentials: [
       'MBChB — University of Cape Town',

@@ -8,15 +8,15 @@
 
 export const images = {
   // ── Main site images ───────────────────────────────────────────────────────
-  hero:       '/images/clinic/dr-precious-iv-prep.jpg',
-  reception:  '/images/clinic/iv-drip-2.jpg',
-  ivDrip:     '/images/clinic/iv-drip-1.jpg',
-  aesthetics: '/images/clinic/aesthetics-consultation.jpg',
+  hero:       '/images/clinic/dr-precious-clinic-entrance.jpg',
+  reception:  '/images/clinic/iv-room-busy.jpg',
+  ivDrip:     '/images/clinic/iv-patient-blonde.jpg',
+  aesthetics: '/images/clinic/dr-lip-filler-injection.jpg',
   travel:     '/images/stock/travel.jpg',
-  medical:    '/images/clinic/aesthetics-injection.jpg',
+  medical:    '/images/clinic/dr-consultation-smiling.jpg',
   weightLoss: '/images/stock/weight-loss.jpg',
   branchTableView:   '/images/clinic/branch-exterior.jpg',
-  branchKhayelitsha: '/images/clinic/skincare-products-2.jpg',
+  branchKhayelitsha: '/images/clinic/khayelitsha-reception-desk.jpg',
 } as const;
 
 // ── "What We Offer" pillar background images (faded + blurred behind cards) ──
@@ -27,24 +27,33 @@ export const pillarBackgrounds: Record<string, string> = {
 };
 
 // ── Founder photo (used on homepage founder section) ─────────────────────────
-export const founderImage = '/images/clinic/dr-precious-portrait.jpg';
+export const founderImage = '/images/clinic/dr-precious-portrait-orange.jpg';
 
 // ── Gallery images ───────────────────────────────────────────────────────────
 export const galleryImages: { src: string; caption: string; category: string }[] = [
-  { src: '/images/clinic/aesthetics-consultation.jpg', caption: 'Aesthetic Consultation', category: 'Treatments' },
-  { src: '/images/clinic/aesthetics-botox.jpg',         caption: 'Anti-Wrinkle Injections', category: 'Treatments' },
-  { src: '/images/clinic/facial-treatment-1.jpg',       caption: 'Chemical Peel Treatment', category: 'Treatments' },
-  { src: '/images/clinic/facial-treatment-3.jpg',       caption: 'Skin Brightening Facial', category: 'Treatments' },
-  { src: '/images/clinic/led-therapy.jpg',              caption: 'LED Light Therapy', category: 'Treatments' },
-  { src: '/images/clinic/mens-facial-1.jpg',            caption: 'Men\'s Skin Treatment', category: 'Treatments' },
-  { src: '/images/clinic/iv-drip-1.jpg',               caption: 'IV Vitamin Drip', category: 'Treatments' },
-  { src: '/images/clinic/iv-drip-2.jpg',               caption: 'IV Wellness Session', category: 'Treatments' },
-  { src: '/images/clinic/iv-drip-4.jpg',               caption: 'IV Drip — Happy Patient', category: 'Treatments' },
-  { src: '/images/clinic/dr-precious-portrait.jpg',     caption: 'Dr Precious Garnett', category: 'Clinic' },
-  { src: '/images/clinic/dr-precious-portrait-2.jpg',   caption: 'Dr Precious — VITO Founder', category: 'Clinic' },
-  { src: '/images/clinic/branch-exterior.jpg',          caption: 'VITO Med — Table View', category: 'Clinic' },
-  { src: '/images/clinic/clinic-event.jpg',             caption: 'Community Clinic Event', category: 'Clinic' },
-  { src: '/images/clinic/skincare-products.jpg',        caption: 'VITO Skincare Products', category: 'Clinic' },
+  // Treatments
+  { src: '/images/clinic/dr-lip-filler-injection.jpg',     caption: 'Lip Filler — Dr Garnett', category: 'Treatments' },
+  { src: '/images/clinic/lip-filler-result.jpg',           caption: 'Lip Filler Result', category: 'Treatments' },
+  { src: '/images/clinic/botox-injection-close.jpg',       caption: 'Botox Injection', category: 'Treatments' },
+  { src: '/images/clinic/botox-forehead.jpg',              caption: 'Anti-Wrinkle Treatment', category: 'Treatments' },
+  { src: '/images/clinic/facial-microneedling.jpg',        caption: 'Microneedling Facial', category: 'Treatments' },
+  { src: '/images/clinic/facial-treatment-blue-scrubs.jpg',caption: 'Facial Treatment', category: 'Treatments' },
+  { src: '/images/clinic/led-therapy.jpg',                 caption: 'LED Light Therapy', category: 'Treatments' },
+  // IV Drips
+  { src: '/images/clinic/iv-room-busy.jpg',                caption: 'IV Drip Lounge', category: 'IV Drips' },
+  { src: '/images/clinic/iv-patient-blonde.jpg',           caption: 'IV Wellness Session', category: 'IV Drips' },
+  { src: '/images/clinic/iv-patient-recliner-b.jpg',       caption: 'IV Vitamin Drip', category: 'IV Drips' },
+  { src: '/images/clinic/dr-iv-turquoise-patient.jpg',     caption: 'IV Drip with Dr Garnett', category: 'IV Drips' },
+  { src: '/images/clinic/iv-patient-sunglasses.jpg',       caption: 'IV Drip — Khayelitsha', category: 'IV Drips' },
+  { src: '/images/clinic/dr-iv-male-cannula.jpg',          caption: 'IV Drip — Male Patient', category: 'IV Drips' },
+  // Clinic
+  { src: '/images/clinic/dr-precious-portrait-orange.jpg', caption: 'Dr Precious Garnett', category: 'Clinic' },
+  { src: '/images/clinic/dr-precious-clinic-entrance.jpg', caption: 'Dr Garnett — VITO Founder', category: 'Clinic' },
+  { src: '/images/clinic/dr-consultation-smiling.jpg',     caption: 'Doctor Consultation', category: 'Clinic' },
+  { src: '/images/clinic/dr-precious-patient-bag.jpg',     caption: 'Happy Patient', category: 'Clinic' },
+  { src: '/images/clinic/khayelitsha-reception-desk.jpg',  caption: 'VITO Khayelitsha Reception', category: 'Clinic' },
+  { src: '/images/clinic/branch-exterior.jpg',             caption: 'VITO Med — Table View', category: 'Clinic' },
+  { src: '/images/clinic/clinic-event.jpg',                caption: 'Community Clinic Event', category: 'Clinic' },
 ];
 
 // ── Blog post images (local) ─────────────────────────────────────────────────
