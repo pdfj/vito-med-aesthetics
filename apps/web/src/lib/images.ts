@@ -15,7 +15,7 @@ export const images = {
   travel:     '/images/stock/travel.jpg',
   medical:    '/images/clinic/dr-consultation-smiling.jpg',
   weightLoss: '/images/stock/weight-loss.jpg',
-  branchTableView:   '/images/clinic/branch-exterior.jpg',
+  branchTableView:   '/images/clinic/area-table-view.jpg',
   branchKhayelitsha: '/images/clinic/khayelitsha-reception-desk.jpg',
 } as const;
 
