@@ -59,7 +59,7 @@ export default function IVDripsBlogPage() {
           Back to Blog
         </Link>
 
-        <div className="prose prose-slate max-w-none text-[#1F2A24]">
+        <div className="prose prose-slate max-w-none text-[#1F2A24] blog-content">
 
           <p className="lead text-lg leading-relaxed text-[#5B6157]">
             Looking for professional IV Vitamin Drips in Cape Town? At VITO Med &amp; Aesthetics, we offer a range of wellness and aesthetic IV therapies designed to support hydration, skin health, energy levels, recovery, and overall wellbeing.

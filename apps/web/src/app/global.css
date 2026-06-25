@@ -348,3 +348,26 @@ html {
     }
     .vito-lift:hover { transform: none; }
 }
+
+/* ── Blog article heading styles ── */
+.blog-content h2 {
+    text-decoration: underline;
+    text-decoration-color: #1A7FD4;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+.blog-content h3 {
+    text-decoration: underline;
+    text-decoration-color: #6E7F63;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1.5px;
+}
+.blog-content p + p {
+    margin-top: 1rem;
+}
+.blog-content ul, .blog-content ol {
+    padding-left: 1.5rem;
+}
+.blog-content ul { list-style-type: disc; }
+.blog-content ol { list-style-type: decimal; }
+.blog-content li { margin-bottom: 0.35rem; }

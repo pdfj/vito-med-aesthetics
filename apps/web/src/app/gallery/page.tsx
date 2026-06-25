@@ -13,7 +13,7 @@ export const metadata = {
     'See inside VITO Med & Aesthetics — our clinic space, treatments, and patient results at our Table View and Khayelitsha branches.',
 };
 
-const categories = ['All', 'Treatments', 'Clinic', 'Results', 'Team'];
+const categories = ['All', 'Treatments', 'IV Drips', 'Clinic'];
 
 export default function GalleryPage() {
   return (

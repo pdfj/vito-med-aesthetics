@@ -59,7 +59,7 @@ export default function HyperpigmentationBlogPage() {
           Back to Blog
         </Link>
 
-        <div className="prose prose-slate max-w-none text-[#1F2A24]">
+        <div className="prose prose-slate max-w-none text-[#1F2A24] blog-content">
 
           <p className="lead text-lg leading-relaxed text-[#5B6157]">
             Hyperpigmentation is one of the most common skin concerns affecting Black African skin. The good news? It can be treated safely and effectively — with the right diagnosis, professional guidance, and a personalised treatment plan.

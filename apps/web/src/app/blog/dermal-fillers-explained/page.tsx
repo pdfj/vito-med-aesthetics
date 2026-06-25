@@ -59,7 +59,7 @@ export default function FillersBlogPage() {
           Back to Blog
         </Link>
 
-        <div className="prose prose-slate max-w-none text-[#1F2A24]">
+        <div className="prose prose-slate max-w-none text-[#1F2A24] blog-content">
 
           <p className="lead text-lg leading-relaxed text-[#5B6157]">
             One of the most common questions patients ask is: <em>what are dermal fillers?</em> Dermal fillers are injectable treatments designed to restore lost volume, enhance facial features, improve facial balance, and soften certain lines and folds. They are commonly used in aesthetic medicine as a non-surgical option to support facial rejuvenation and enhancement.

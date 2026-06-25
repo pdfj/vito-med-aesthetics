@@ -59,7 +59,7 @@ export default function AntiAgingBlogPage() {
           Back to Blog
         </Link>
 
-        <div className="prose prose-slate max-w-none text-[#1F2A24]">
+        <div className="prose prose-slate max-w-none text-[#1F2A24] blog-content">
 
           <p className="lead text-lg leading-relaxed text-[#5B6157]">
             As we age, our skin naturally undergoes changes that can affect texture, elasticity, tone, and overall appearance. Fine lines, wrinkles, pigmentation, enlarged pores, acne scarring, and loss of radiance are common concerns for many individuals seeking aesthetic treatments.

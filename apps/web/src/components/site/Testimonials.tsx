@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { testimonials } from '@/lib/testimonials-data';
 
@@ -20,13 +20,27 @@ export default function Testimonials({ dark = false }: { dark?: boolean }) {
   const [index, setIndex] = useState(0);
   const total = testimonials.length;
   const active = testimonials[index];
+  const touchStartX = useRef<number>(0);
 
   const go = (dir: number) => {
     setIndex((prev) => (prev + dir + total) % total);
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const delta = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 50) go(delta > 0 ? 1 : -1);
+  };
+
   return (
-    <div className="mx-auto max-w-3xl text-center">
+    <div
+      className="mx-auto max-w-3xl text-center"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
 
       {/* Stars */}
       <Stars count={active.stars ?? 5} />

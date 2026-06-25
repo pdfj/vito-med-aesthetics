@@ -59,7 +59,7 @@ export default function BotoxBlogPage() {
           Back to Blog
         </Link>
 
-        <div className="prose prose-slate max-w-none text-[#1F2A24]">
+        <div className="prose prose-slate max-w-none text-[#1F2A24] blog-content">
 
           <p className="lead text-lg leading-relaxed text-[#5B6157]">
             Wrinkles are a natural part of ageing, but today there are multiple treatment options available to help soften their appearance and support healthier-looking skin. One of the most popular non-surgical aesthetic treatments is Botox face treatment, widely used to reduce dynamic wrinkles and refresh facial appearance.

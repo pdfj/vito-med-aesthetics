@@ -21,7 +21,7 @@ function answer(qRaw: string): string {
   const has = (...words: string[]) => words.some((w) => q.includes(w));
 
   if (has('hour', 'open', 'time', 'when can'))
-    return `We're open:\n• Mon–Fri: 08:30 – 18:00\n• Saturday: 09:00 – 14:00\n• Sunday & public holidays: Closed`;
+    return `We're open:\n• Mon–Fri: 09:00 – 18:00\n• Sat, Sun & Public Holidays: 09:00 – 14:00`;
 
   if (has('where', 'location', 'address', 'branch', 'find you'))
     return `We have two branches in Cape Town:\n\n📍 Table View — Block B207, Sandown Square, Passerina Road, Sandown\n📍 Khayelitsha — 70 Ngcwalazi Drive, Litha Park\n\nVisit the Contact page for maps & directions.`;
