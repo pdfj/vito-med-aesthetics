@@ -9,7 +9,7 @@
 export const images = {
   // ── Main site images ───────────────────────────────────────────────────────
   hero:       '/images/clinic/dr-precious-clinic-entrance.jpg',
-  reception:  '/images/clinic/iv-room-busy.jpg',
+  reception:  '/images/clinic/iv-pink-scrubs-cannula.jpg',
   ivDrip:     '/images/clinic/dr-precious-iv-scrubs-setup.jpg',
   aesthetics: '/images/clinic/dr-lip-filler-injection.jpg',
   travel:     '/images/stock/travel.jpg',
@@ -33,12 +33,9 @@ export const founderImage = '/images/clinic/dr-precious-iv-with-patient.png';
 export const galleryImages: { src: string; caption: string; category: string }[] = [
   // Treatments
   { src: '/images/clinic/dr-lip-filler-injection.jpg',        caption: 'Lip Filler — Dr Garnett', category: 'Treatments' },
-  { src: '/images/clinic/lip-filler-blonde-patient.png',       caption: 'Lip Filler', category: 'Treatments' },
-  { src: '/images/clinic/lip-filler-result-side.png',          caption: 'Lip Filler', category: 'Treatments' },
   { src: '/images/clinic/lip-filler-result.jpg',               caption: 'Lip Filler Result', category: 'Treatments' },
   { src: '/images/clinic/botox-injection-close.jpg',           caption: 'Botox Injection', category: 'Treatments' },
   { src: '/images/clinic/botox-forehead.jpg',                  caption: 'Anti-Wrinkle Treatment', category: 'Treatments' },
-  { src: '/images/clinic/facial-microneedling.jpg',            caption: 'Microneedling Facial', category: 'Treatments' },
   { src: '/images/clinic/dr-precious-chemical-peel.jpg',        caption: 'Chemical Peel Treatment', category: 'Treatments' },
   { src: '/images/clinic/facial-electroporation-treatment.jpg',caption: 'Electroporation Facial', category: 'Treatments' },
   { src: '/images/clinic/facial-treatment-blue-scrubs.jpg',    caption: 'Facial Treatment', category: 'Treatments' },
@@ -46,6 +43,7 @@ export const galleryImages: { src: string; caption: string; category: string }[]
   // IV Drips
   { src: '/images/clinic/iv-room-busy.jpg',                    caption: 'IV Drip Lounge', category: 'IV Drips' },
   { src: '/images/clinic/dr-precious-iv-scrubs-setup.jpg',     caption: 'Dr Garnett — IV Setup', category: 'IV Drips' },
+  { src: '/images/clinic/iv-pink-scrubs-cannula.jpg',          caption: 'IV Drip — Cannula Insertion', category: 'IV Drips' },
   { src: '/images/clinic/iv-patient-blonde.jpg',               caption: 'IV Wellness Session', category: 'IV Drips' },
   { src: '/images/clinic/dr-precious-iv-with-patient.png',     caption: 'IV Drip with Dr Garnett', category: 'IV Drips' },
   { src: '/images/clinic/iv-patient-recliner-b.jpg',           caption: 'IV Vitamin Drip', category: 'IV Drips' },
@@ -58,7 +56,6 @@ export const galleryImages: { src: string; caption: string; category: string }[]
   { src: '/images/clinic/dr-consultation-desk-patient.jpg',    caption: 'Patient Consultation', category: 'Clinic' },
   { src: '/images/clinic/patient-happy-vito-bag.jpg',          caption: 'Happy Patient — VITO Med', category: 'Clinic' },
   { src: '/images/clinic/dr-precious-clinic-entrance.jpg',     caption: 'Dr Garnett — VITO Founder', category: 'Clinic' },
-  { src: '/images/clinic/dr-consultation-smiling.jpg',         caption: 'Doctor Consultation', category: 'Clinic' },
   { src: '/images/clinic/khayelitsha-reception-desk.jpg',      caption: 'VITO Khayelitsha Reception', category: 'Clinic' },
   { src: '/images/clinic/branch-exterior.jpg',                 caption: 'VITO Med — Table View', category: 'Clinic' },
   { src: '/images/clinic/clinic-event.jpg',                    caption: 'Community Clinic Event', category: 'Clinic' },
