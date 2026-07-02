@@ -141,6 +141,17 @@ export default function Footer() {
           </p>
           <p className="text-xs text-white/50">{site.legal}</p>
         </div>
+
+        <div className="mt-6 text-center">
+          <p className="text-xs text-white/40">
+            Website developed by{' '}
+            <span className="font-medium text-white/70">Netrive</span>
+            {' '}·{' '}
+            <a href="tel:+27656538435" className="transition-colors hover:text-[#1A7FD4]">
+              +27 65 653 8435
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
