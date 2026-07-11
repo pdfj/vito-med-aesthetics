@@ -7,11 +7,11 @@ export const site = {
   founder: 'Dr Precious Garnett',
   tagline: 'Healthy body, Healthy skin.',
   intro:
-    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View and Khayelitsha, Litha Park offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. Services include Botox, dermal fillers, facial treatments, IV vitamin therapy, weight management support, and body-focused aesthetic procedures.',
+    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View and Khayelitsha, Litha Park offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. Services include anti-wrinkle injectables, dermal fillers, facial treatments, IV vitamin therapy, weight management support, and body-focused aesthetic procedures.',
   summary:
     'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View and Khayelitsha, Litha Park offering skin, body, and non-surgical aesthetic treatments in a welcoming and inclusive environment. The clinic focuses on personalised care, client comfort, and medically guided wellness treatments tailored to individual goals and confidence.',
   keywords:
-    'skincare, botox, filler, skin treatment, anti-aging, hyperpigmentation, pigmentation, skin glow, aesthetics, medical aesthetics, travel clinic, travel doctor, doctor, travel medical, IV drips, Cape Town',
+    'skincare, anti-wrinkle injectables, wrinkle-relaxing treatment, filler, skin treatment, anti-aging, hyperpigmentation, pigmentation, skin glow, aesthetics, medical aesthetics, travel clinic, travel doctor, doctor, travel medical, IV drips, Cape Town',
   legal: 'VITO Med & Aesthetics (Pty) Ltd · 100% black-owned, South African registered business.',
   // Contact
   phonePrimary: '+27 79 872 1230',

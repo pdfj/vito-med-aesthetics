@@ -21,7 +21,7 @@ export const images = {
 
 // ── "What We Offer" pillar background images (faded + blurred behind cards) ──
 export const pillarBackgrounds: Record<string, string> = {
-  'medical-aesthetics': '/images/clinic/aesthetics-botox.jpg',
+  'medical-aesthetics': '/images/clinic/aesthetics-antiwrinkle.jpg',
   'travel-clinic': '/images/stock/travel.jpg',
   'medical-care': '/images/clinic/dr-precious-portrait.jpg',
 };
@@ -34,8 +34,8 @@ export const galleryImages: { src: string; caption: string; category: string }[]
   // Treatments
   { src: '/images/clinic/dr-lip-filler-injection.jpg',        caption: 'Lip Filler — Dr Garnett', category: 'Treatments' },
   { src: '/images/clinic/lip-filler-result.jpg',               caption: 'Lip Filler Result', category: 'Treatments' },
-  { src: '/images/clinic/botox-injection-close.jpg',           caption: 'Botox Injection', category: 'Treatments' },
-  { src: '/images/clinic/botox-forehead.jpg',                  caption: 'Anti-Wrinkle Treatment', category: 'Treatments' },
+  { src: '/images/clinic/antiwrinkle-injection-close.jpg',     caption: 'Anti-Wrinkle Injection', category: 'Treatments' },
+  { src: '/images/clinic/antiwrinkle-forehead.jpg',           caption: 'Anti-Wrinkle Treatment', category: 'Treatments' },
   { src: '/images/clinic/dr-precious-chemical-peel.jpg',        caption: 'Chemical Peel Treatment', category: 'Treatments' },
   { src: '/images/clinic/facial-electroporation-treatment.jpg',caption: 'Electroporation Facial', category: 'Treatments' },
   { src: '/images/clinic/facial-treatment-blue-scrubs.jpg',    caption: 'Facial Treatment', category: 'Treatments' },

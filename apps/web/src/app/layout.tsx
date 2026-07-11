@@ -7,9 +7,9 @@ import ChatWidget from '@/components/site/ChatWidget';
 export const metadata: Metadata = {
   title: 'VITO Med & Aesthetics | Medical Aesthetics, Travel & Medical Care · Cape Town',
   description:
-    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View, Cape Town. Offering Botox, dermal fillers, IV vitamin drips, skin treatments, travel medicine and acute & chronic medical care — led by Dr Precious Garnett.',
+    'Vito Med & Aesthetics is a professionally operated wellness and aesthetic clinic in Table View, Cape Town. Offering anti-wrinkle injectables, dermal fillers, IV vitamin drips, skin treatments, travel medicine and acute & chronic medical care — led by Dr Precious Garnett.',
   keywords:
-    'skincare, botox, filler, skin treatment, anti-aging, hyperpigmentation, pigmentation, skin glow, aesthetics, medical aesthetics, travel clinic, travel doctor, IV drips, Cape Town, Table View, Khayelitsha',
+    'skincare, anti-wrinkle injectables, wrinkle-relaxing treatment, filler, skin treatment, anti-aging, hyperpigmentation, pigmentation, skin glow, aesthetics, medical aesthetics, travel clinic, travel doctor, IV drips, Cape Town, Table View, Khayelitsha',
   icons: {
     icon: '/favicon.png',
   },

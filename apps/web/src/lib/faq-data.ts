@@ -24,7 +24,7 @@ export const faqs: Faq[] = [
   {
     question: 'What services do you offer?',
     answer:
-      'Medical care (acute and chronic diagnosis and treatment), a travel clinic (medical assessments, vaccinations, kits and advice) and medical aesthetics (Botox & fillers, chemical/medical peels, Iron infusions, Weight loss solutions, Fat Dissolving injections and IV vitamin drips).',
+      'Medical care (acute and chronic diagnosis and treatment), a travel clinic (medical assessments, vaccinations, kits and advice) and medical aesthetics (anti-wrinkle injectables & fillers, chemical/medical peels, Iron infusions, Weight loss solutions, Fat Dissolving injections and IV vitamin drips).',
   },
   {
     question: 'How can I book an appointment?',

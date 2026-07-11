@@ -44,11 +44,11 @@ const posts = [
     date: 'June 2026',
   },
   {
-    slug: 'botox-anti-wrinkle-injections',
-    title: 'Botox: Understanding Wrinkles and How Anti-Wrinkle Injections Work',
+    slug: 'anti-wrinkle-injectables',
+    title: 'Anti-Wrinkle Injectables: Understanding Wrinkles and How Wrinkle-Relaxing Injections Work',
     excerpt:
-      'Everything you need to know about Botox for face treatments — how wrinkles form, how to prevent them, and what treatment options are available from chemical peels to anti-wrinkle injections.',
-    image: '/images/clinic/botox-injection-close.jpg',
+      'Everything you need to know about anti-wrinkle injectables — how wrinkles form, how to prevent them, and what treatment options are available from chemical peels to wrinkle-relaxing injections.',
+    image: '/images/clinic/antiwrinkle-injection-close.jpg',
     category: 'Aesthetics',
     readTime: '7 min read',
     date: 'June 2026',

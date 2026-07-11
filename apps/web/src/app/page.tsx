@@ -24,7 +24,7 @@ import { images, pillarBackgrounds, founderImage } from '@/lib/images';
 export const metadata = {
   title: 'VITO Med & Aesthetics | Doctor-Led Medical & Aesthetic Care, Cape Town',
   description:
-    'Premium doctor-led medical, travel and aesthetic care in Cape Town — IV vitamin drips, Botox, fillers, chemical peels, skin treatments and more. Two branches: Table View & Khayelitsha. Led by Dr Precious Garnett, MBChB.',
+    'Premium doctor-led medical, travel and aesthetic care in Cape Town — IV vitamin drips, anti-wrinkle injectables, fillers, chemical peels, skin treatments and more. Two branches: Table View & Khayelitsha. Led by Dr Precious Garnett, MBChB.',
 };
 
 const pillarIcons = {

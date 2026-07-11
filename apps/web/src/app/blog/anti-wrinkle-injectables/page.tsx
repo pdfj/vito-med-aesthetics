@@ -6,12 +6,12 @@ import WhatsAppFab from '@/components/site/WhatsAppFab';
 import { site } from '@/lib/site';
 
 export const metadata = {
-  title: 'Botox: Understanding Wrinkles & Anti-Wrinkle Injections | VITO Med',
+  title: 'Anti-Wrinkle Injectables: Understanding Wrinkles & Wrinkle-Relaxing Treatments | VITO Med',
   description:
-    'Everything you need to know about Botox face treatment — how wrinkles form, prevention tips, and treatment options including facial botox, fillers, microneedling and chemical peels. By Dr Precious Garnett.',
+    'Everything you need to know about anti-wrinkle injectables — how wrinkles form, prevention tips, and treatment options including wrinkle-relaxing injections, fillers, microneedling and chemical peels. By Dr Precious Garnett.',
 };
 
-export default function BotoxBlogPage() {
+export default function AntiWrinkleBlogPage() {
   return (
     <main className="bg-[#E8F4FF] text-[#1F2A24]">
       <Header />
@@ -20,8 +20,8 @@ export default function BotoxBlogPage() {
       <div className="relative bg-[#0A1929] pt-[77px]">
         <div className="relative aspect-[21/7] max-h-[420px] overflow-hidden">
           <img
-            src="/images/clinic/botox-injection-close.jpg"
-            alt="Botox injection treatment at VITO Med"
+            src="/images/clinic/antiwrinkle-injection-close.jpg"
+            alt="Anti-wrinkle injection treatment at VITO Med"
             className="h-full w-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1929] via-[#0A1929]/60 to-transparent" />
@@ -31,7 +31,7 @@ export default function BotoxBlogPage() {
                 Aesthetics
               </span>
               <h1 className="mt-4 font-cormorant-garamond text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">
-                Botox: Understanding Wrinkles and How Anti-Wrinkle Injections Can Give Your Best Skin
+                Anti-Wrinkle Injectables: Understanding Wrinkles and How Wrinkle-Relaxing Injections Can Give Your Best Skin
               </h1>
               <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-white/60">
                 <span className="flex items-center gap-1.5">
@@ -62,7 +62,7 @@ export default function BotoxBlogPage() {
         <div className="prose prose-slate max-w-none text-[#1F2A24] blog-content">
 
           <p className="lead text-lg leading-relaxed text-[#5B6157]">
-            Wrinkles are a natural part of ageing, but today there are multiple treatment options available to help soften their appearance and support healthier-looking skin. One of the most popular non-surgical aesthetic treatments is Botox face treatment, widely used to reduce dynamic wrinkles and refresh facial appearance.
+            Wrinkles are a natural part of ageing, but today there are multiple treatment options available to help soften their appearance and support healthier-looking skin. One of the most popular non-surgical aesthetic treatments is anti-wrinkle injectables (a wrinkle-relaxing treatment), widely used to reduce dynamic wrinkles and refresh facial appearance.
           </p>
 
           <h2>What Are Wrinkles?</h2>
@@ -127,9 +127,9 @@ export default function BotoxBlogPage() {
             Yes. Modern aesthetic medicine offers several treatment approaches depending on skin type, wrinkle severity, and treatment goals.
           </p>
 
-          <h3>1. Botox Face Treatment (Botulinum Toxin Injections)</h3>
+          <h3>1. Anti-Wrinkle Injectables (Botulinum Toxin Injections)</h3>
           <p>
-            One of the most requested treatments for facial rejuvenation is Botox face treatment. Botulinum toxin is a purified medical product used to temporarily reduce muscle activity. During Botox facial treatment, carefully placed injections help relax muscles responsible for expression lines.
+            One of the most requested treatments for facial rejuvenation is anti-wrinkle injectables. Botulinum toxin is a purified medical product used to temporarily reduce muscle activity. During the treatment, carefully placed injections help relax the muscles responsible for expression lines.
           </p>
           <p>Common areas treated include:</p>
           <ul>
@@ -140,15 +140,15 @@ export default function BotoxBlogPage() {
             <li>Chin dimpling</li>
           </ul>
           <p>
-            Because face Botox works by limiting repetitive muscle movement, the skin appears smoother and more refreshed. In addition to cosmetic use, botulinum toxin may also be used medically for conditions such as excessive sweating, muscle spasms, overactive bladder, and certain neurological conditions.
+            Because wrinkle-relaxing injections work by limiting repetitive muscle movement, the skin appears smoother and more refreshed. In addition to cosmetic use, botulinum toxin may also be used medically for conditions such as excessive sweating, muscle spasms, overactive bladder, and certain neurological conditions.
           </p>
           <p>
-            Many patients choose Botox for face treatments because they are non-surgical, require minimal downtime, and can produce natural-looking results when administered appropriately.
+            Many patients choose anti-wrinkle injectables because they are non-surgical, require minimal downtime, and can produce natural-looking results when administered appropriately.
           </p>
 
           <h3>2. Dermal Fillers</h3>
           <p>
-            Dermal fillers such as hyaluronic acid may restore volume and soften static wrinkles caused by volume loss. Unlike facial Botox, fillers focus on replacing lost structure and volume rather than reducing muscle movement.
+            Dermal fillers such as hyaluronic acid may restore volume and soften static wrinkles caused by volume loss. Unlike wrinkle-relaxing injections, fillers focus on replacing lost structure and volume rather than reducing muscle movement.
           </p>
           <p>
             Best for: under-eye wrinkles/pigmentation (tear trough), laugh lines, dropping face (face lift effect), upper lip lines (especially for smokers — barcode lines), and lips for hydration and enhancing volume.
@@ -179,15 +179,15 @@ export default function BotoxBlogPage() {
 
           <h2>Frequently Asked Questions</h2>
 
-          <h3>Is Botox for face safe?</h3>
+          <h3>Are anti-wrinkle injectables safe?</h3>
           <p>
             When performed by a qualified healthcare professional following appropriate assessment, anti-wrinkle injections are widely used in aesthetic practice.
           </p>
 
-          <h3>How long does Botox face treatment last?</h3>
+          <h3>How long do anti-wrinkle injectables last?</h3>
           <p>Results vary between individuals and treatment areas, but usually between 4–6 months.</p>
 
-          <h3>Does facial Botox make you look frozen?</h3>
+          <h3>Do anti-wrinkle injectables make you look frozen?</h3>
           <p>Modern treatment techniques aim to create refreshed and natural-looking outcomes.</p>
 
           <h3>At what age should someone start anti-wrinkle injections?</h3>
@@ -197,7 +197,7 @@ export default function BotoxBlogPage() {
 
           <h2>Final Thoughts</h2>
           <p>
-            Wrinkles are a natural part of life, but there are many ways to support skin health and manage visible signs of ageing. Whether through preventative skincare, lifestyle changes, or treatments such as Botox face treatment, personalised care can help you achieve natural and balanced results.
+            Wrinkles are a natural part of life, but there are many ways to support skin health and manage visible signs of ageing. Whether through preventative skincare, lifestyle changes, or treatments such as anti-wrinkle injectables, personalised care can help you achieve natural and balanced results.
           </p>
         </div>
 

@@ -31,9 +31,9 @@ export const pillars: Pillar[] = [
           'Restore volume and definition — lip enhancement, cheeks, nasolabial folds and subtle facial contouring using medical-grade dermal fillers, administered by a qualified doctor.',
       },
       {
-        name: 'Botox (Anti-Wrinkle)',
+        name: 'Anti-Wrinkle Injectables',
         description:
-          'Smooth fine lines and soften expression wrinkles with precise, natural-looking Botulinum Toxin injections — always administered by Dr Garnett, never a nurse or therapist.',
+          'Smooth fine lines and soften expression wrinkles with precise, natural-looking wrinkle-relaxing injections (botulinum toxin) — always administered by Dr Garnett, never a nurse or therapist.',
       },
       {
         name: 'Treatment for Hyperpigmentation',

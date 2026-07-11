@@ -32,8 +32,8 @@ function answer(qRaw: string): string {
   if (has('iv', 'drip', 'vitamin'))
     return `Our IV Vitamin Drips include 16+ formulas 💧\nSkin Glow, Skin Lightening, Glutathione, Anti-Aging, Brain Boost, Energy, Immune, Libido, Fertility, Detox, Anti-Inflammatory, Sports Endurance & Recovery, VIP 5-in-1 Cocktail, Weight Loss & Weight Gain — all given by a qualified doctor.`;
 
-  if (has('botox', 'wrinkle', 'filler', 'aesthetic'))
-    return `Our medical aesthetics include Anti-Wrinkle (Botox), Dermal Fillers, hyperpigmentation & acne treatments, chemical peels, micro-needling, derma-planing, LED therapy and more — all doctor-administered. ✨`;
+  if (has('botox', 'wrinkle', 'filler', 'aesthetic', 'injectable'))
+    return `Our medical aesthetics include Anti-Wrinkle Injectables, Dermal Fillers, hyperpigmentation & acne treatments, chemical peels, micro-needling, derma-planing, LED therapy and more — all doctor-administered. ✨`;
 
   if (has('skin', 'pigment', 'acne', 'peel', 'laser'))
     return `For skin we offer treatment for hyperpigmentation & dark spots, acne, chemical peels, micro-needling, derma-planing, LED photodynamic therapy, and laser/IPL care. Dr Garnett creates a personalised plan for your skin.`;
@@ -51,7 +51,7 @@ function answer(qRaw: string): string {
     return `VITO is led by Dr Precious Garnett — a qualified medical doctor (MBChB, UCT) with 10+ years' experience, plus qualifications in Public Health, HIV Management, Travel Medicine and Medical Aesthetics. Not a nurse or therapist — a real doctor. 👩‍⚕️`;
 
   if (has('service', 'offer', 'treatment', 'do you do', 'what can'))
-    return `We offer three pillars of care:\n1️⃣ Medical Aesthetics (Botox, fillers, IV drips, skin & laser)\n2️⃣ Travel Clinic (vaccines, assessments, kits)\n3️⃣ Acute & Chronic Medical Care\n\nWhich would you like to know more about?`;
+    return `We offer three pillars of care:\n1️⃣ Medical Aesthetics (anti-wrinkle injectables, fillers, IV drips, skin & laser)\n2️⃣ Travel Clinic (vaccines, assessments, kits)\n3️⃣ Acute & Chronic Medical Care\n\nWhich would you like to know more about?`;
 
   if (has('phone', 'call', 'number', 'contact', 'whatsapp', 'email'))
     return `Reach us anytime:\n📞 ${site.phonePrimary}\n💬 WhatsApp: ${site.whatsapp}\n✉️ ${site.email}`;
