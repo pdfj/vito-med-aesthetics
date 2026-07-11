@@ -4,9 +4,10 @@ import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { CalendarCheck, Loader2 } from 'lucide-react';
+import { site } from '@/lib/site';
 
 const serviceOptions = [
-  'Medical Aesthetics — Botox & Fillers',
+  'Medical Aesthetics — Anti-Wrinkle Injectables & Fillers',
   'IV Vitamin Drips',
   'Skin Treatments & Peels',
   'Medical Weight Loss',
@@ -44,6 +45,8 @@ const labelClass = 'mb-1.5 block text-xs font-medium uppercase tracking-[0.14em]
 export default function AppointmentForm() {
   const [form, setForm] = useState<FormState>(initialState);
 
+  // Best-effort save to our records. WhatsApp is the guaranteed delivery channel,
+  // so a failure here (e.g. database not configured) never blocks the booking.
   const mutation = useMutation({
     mutationFn: async (payload: FormState) => {
       const res = await fetch('/api/appointments', {
@@ -51,18 +54,15 @@ export default function AppointmentForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
       if (!res.ok) {
-        throw new Error(data.error || 'Could not submit your request.');
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Could not save request.');
       }
-      return data;
-    },
-    onSuccess: () => {
-      toast.success("Request sent! We'll be in touch shortly to confirm.");
-      setForm(initialState);
+      return res.json();
     },
     onError: (error: Error) => {
-      toast.error(error.message);
+      // Silent — the WhatsApp hand-off below still delivers the booking.
+      console.error('Appointment DB save failed:', error.message);
     },
   });
 
@@ -71,13 +71,38 @@ export default function AppointmentForm() {
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
       setForm((prev) => ({ ...prev, [key]: e.target.value }));
 
+  const buildWhatsAppUrl = (data: FormState) => {
+    const lines = [
+      '*New Booking Request — VITO Med & Aesthetics*',
+      `Name: ${data.fullName}`,
+      `Phone: ${data.phone}`,
+      `Email: ${data.email}`,
+      data.service ? `Service: ${data.service}` : null,
+      data.preferredDate ? `Preferred date: ${data.preferredDate}` : null,
+      data.preferredTime ? `Preferred time: ${data.preferredTime}` : null,
+      data.message ? `Message: ${data.message}` : null,
+    ]
+      .filter(Boolean)
+      .join('\n');
+    return `${site.whatsappHref}?text=${encodeURIComponent(lines)}`;
+  };
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.fullName || !form.email || !form.phone) {
       toast.error('Please add your name, email and phone number.');
       return;
     }
+
+    // 1) Save a backup record (best effort — never blocks the booking).
     mutation.mutate(form);
+
+    // 2) Hand off to WhatsApp so the clinic always receives the request.
+    //    Opened synchronously inside the click handler so it isn't popup-blocked.
+    window.open(buildWhatsAppUrl(form), '_blank', 'noopener,noreferrer');
+
+    toast.success('Opening WhatsApp — just press send to confirm your booking with VITO.');
+    setForm(initialState);
   };
 
   return (
